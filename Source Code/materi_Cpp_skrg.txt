@@ -1,0 +1,116 @@
+
+1. Strcat (penggabunggan nilai string)
+    contoh program :
+
+#include <iostream>
+#include <conio.h>
+#include <string.h>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+
+char tanya[50]="siapa namamu?";
+cout<<"kalimat tanya : "<<tanya<<endl;
+strcat(tanya, "nama saya nisa nurist");
+cout<<"kalimat tanya dengan jawaban : "<<tanya<<endl;
+
+     return 0;
+}
+
+2. Strchr (mencari nilai karakter dalam string) 
+    contoh program :
+
+#include <conio.h>
+#include <iostream>
+#include <string.h>
+#include <ctype.h>
+#include <stdio.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+int main(int argc, char** argv) {
+    char nama[50]="nisa nur istiqomah";
+
+char dicari='n';
+
+char*hasil;
+
+hasil=strchr(nama,dicari);
+cout<<hasil<<" ,huruf yangg dicari= "<<dicari;
+    return 0;
+}
+
+3. Strcmp (membandingkan 2 nilai string)
+    contoh program :
+
+#include <conio.h>
+#include <iostream>
+#include <stdio.h>
+#include <string.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+int main(int argc, char** argv) {
+char angka1[10];
+char angka2[10];
+
+
+cout<<"angka pertama : ";cin>>angka1;
+cout<<"angka kedua  : ";cin>>angka2;
+
+int hasil= strcmp(angka1,angka2);
+
+if(hasil==0)
+
+        cout<<"angka "<<angka1<<"sama dengan"<<angka2;
+
+else if(hasil<0)
+
+        cout<<"angka "<<angka1<<"lebih kecil dari "<<angka2;
+
+else
+        cout<<"angka "<<angka1<<"lebih besar dari "<<angka2;
+    return 0;
+}
+
+
+
+4. Strrlen (mengetahui panjang nilai string)
+    contoh program :
+
+#include <iostream>
+#include <conio.h>
+#include <string.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+int main(int argc, char** argv) {
+char nama[50]="nisa nur istiqomah";
+
+char kosong[50]="";
+cout<<"jumlah karakter dari nama(nisa nur istiqomah)adalah"<<strlen(nama)<<endl;
+
+cout<<"jumlah karakter dari kosong adalah "<<strlen(kosong)<<endl;
+    return 0;
+}
+
+5. Strcpy (menyalin/mengcopy nilai string)
+    contoh program :
+
+#include <iostream>
+#include <conio.h>
+#include <string.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+using namespace std;
+
+int main(int argc, char** argv) {
+char kata[20];
+
+char pindah[20];
+cout<"input kata yang akan dipindah/copy :";
+gets(kata);
+strcpy(pindah,kata);
+
+cout<<"pemindahannya = "<<pindah;
+    return 0;
+} 
